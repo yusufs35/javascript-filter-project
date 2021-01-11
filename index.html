@@ -69,44 +69,48 @@ https://www.iconfinder.com/korawan_m
 
         </div>
         <div id="cart" class="cart">
-          <!-- cart item -->
-          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-            <img src="img/z-cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
-            <div class="item-text">
+             <div class="cart-items">
+               <!-- cart item -->
+               <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+               <img src="img/z-cake-2.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+               <div class="item-text">
 
-              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
-              <p id="cart-item-price" class="mb-0">10.99</p>
-            </div>
-            <a href="#" id='cart-item-remove' class="cart-item-remove">
-              <i class="fas fa-trash"></i>
-            </a>
-          </div>
-          <!--end of  cart item -->
-          <!-- cart item -->
-          <div class="cart-item d-flex justify-content-between text-capitalize my-3">
-            <img src="img/z-sweets-3.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
-            <div class="cart-item-text">
+               <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+               <p id="cart-item-price" class="mb-0">10.99</p>
+               </div>
+               <a href="#" id='cart-item-remove' class="cart-item-remove">
+               <i class="fas fa-trash"></i>
+               </a>
+               </div>
+               <!--end of  cart item -->
+               <!-- cart item -->
+               <div class="cart-item d-flex justify-content-between text-capitalize my-3">
+               <img src="img/z-sweets-3.jpeg" class="img-fluid rounded-circle" id="item-img" alt="">
+               <div class="cart-item-text">
 
-              <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
-              <p id="cart-item-price" class="mb-0">10.99</p>
-            </div>
-            <a href="#" id='cart-item-remove' class="cart-item-remove">
-              <i class="fas fa-trash"></i>
-            </a>
+               <p id="cart-item-title" class="font-weight-bold mb-0">cart item</p>
+               <p id="cart-item-price" class="mb-0">10.99</p>
+               </div>
+               <a href="#" id='cart-item-remove' class="cart-item-remove">
+               <i class="fas fa-trash"></i>
+               </a>
+               </div>
+               <!--end of  cart item -->
           </div>
-          <!--end of  cart item -->
+          
           <!-- cart total -->
           <div class="cart-total-container d-flex justify-content-around text-capitalize mt-5">
-            <h5>total</h5>
-            <h5> $ <strong id="cart-total" class="font-weight-bold">10.00</strong> </h5>
+          <h5>total</h5>
+          <h5> $ <strong id="cart-total" class="font-weight-bold">10.00</strong> </h5>
           </div>
           <!--end cart total -->
           <!-- cart buttons -->
           <div class="cart-buttons-container mt-3 d-flex justify-content-between">
-            <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase">clear cart</a>
-            <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
+               <a href="#" id="clear-cart" class="btn btn-outline-secondary btn-black text-uppercase"  onclick="clearCart()">clear cart</a>
+               <a href="#" class="btn btn-outline-secondary text-uppercase btn-pink">checkout</a>
           </div>
           <!--end of  cart buttons -->
+          
           <!--  -->
         </div>
       </div>
@@ -165,7 +169,7 @@ https://www.iconfinder.com/korawan_m
       </div>
       <!-- search box -->
       <div class="row">
-
+         
         <div class="col-10 mx-auto col-md-6">
           <form>
             <div class="input-group mb-3">
@@ -186,7 +190,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/sweets-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="1" data-price="5" data-title="sweet item" data-image="sweets-1.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -194,11 +198,8 @@ https://www.iconfinder.com/korawan_m
               <div class="card-text d-flex justify-content-between text-capitalize">
                 <h5 id="store-item-name">sweet item</h5>
                 <h5 class="store-item-value">$ <strong id="store-item-price" class="font-weight-bold">5</strong></h5>
-
               </div>
             </div>
-
-
           </div>
           <!-- end of card-->
         </div>
@@ -208,7 +209,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/cupcake-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="2" data-price="5" data-title="cupcake item" data-image="cupcake-1.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -230,7 +231,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/cake-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="3" data-price="5" data-title="cake item" data-image="cake-1.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -252,7 +253,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/doughnut-1.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="4" data-price="5" data-title="dougnut item" data-image="doughnut-1.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -274,7 +275,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/sweets-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="5" data-price="10" data-title="sweet item" data-image="sweets-2.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -296,7 +297,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/cupcake-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="6" data-price="10" data-title="cupcake item" data-image="cupcake-2.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -318,7 +319,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/cake-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="7" data-price="10" data-title="cake item" data-image="cake-2.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -340,7 +341,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/doughnut-2.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="8" data-price="10" data-title="dougnut item" data-image="doughnut-2.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -362,7 +363,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/sweets-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="9" data-price="15" data-title="sweet item" data-image="sweets-3.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -384,7 +385,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/cupcake-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="10" data-price="15" data-title="cupcake item" data-image="cupcake-3.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -406,7 +407,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/cake-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="11" data-price="15" data-title="cake item" data-image="cake-3.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
@@ -428,7 +429,7 @@ https://www.iconfinder.com/korawan_m
           <div class="card">
             <div class="img-container">
               <img src="img/doughnut-3.jpeg" class="card-img-top store-img" alt="">
-              <span class="store-item-icon">
+              <span class="store-item-icon" data-id="12" data-price="15" data-title="dougnut item" data-image="doughnut-3.jpeg">
                 <i class="fas fa-shopping-cart"></i>
               </span>
             </div>
